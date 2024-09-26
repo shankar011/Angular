@@ -39,3 +39,17 @@ nav {
     align-items: center;
     color: #1a7c80;
   }
+
+  .directive{
+    text-align: center;
+    margin: 20px;
+  }
+
+  .directive h2,p{
+    padding: 10px;
+    border: 1px solid #0bddcc;
+    background-color: #1a7c80;
+    color: black;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }

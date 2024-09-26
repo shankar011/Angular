@@ -17,6 +17,7 @@ import { ParentComponent } from './parentchild/parent/parent.component';
 import { ChildComponent } from './parentchild/child/child.component';
 import { UsersListComponent } from './pipes/users-list/users-list.component';
 import { TruncateEmailPipe } from './pipes/truncate-email.pipe';
+import { HighlightDirective } from './customdirective/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { TruncateEmailPipe } from './pipes/truncate-email.pipe';
     ParentComponent,
     ChildComponent,
     UsersListComponent,
-    TruncateEmailPipe
+    TruncateEmailPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
