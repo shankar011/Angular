@@ -1,0 +1,30 @@
+.users-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+  }
+  
+  th {
+    background-color: #08997a;
+    color: #ddd;
+  }
+  
+  td {
+    text-align: left;
+    background-color: rgb(163, 77, 163);
+    color: whitesmoke;
+  }
+  

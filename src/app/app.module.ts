@@ -15,6 +15,8 @@ import { PostsListComponent } from './posts-list/posts-list.component';
 import { CounterComponent } from './counter/counter.component';
 import { ParentComponent } from './parentchild/parent/parent.component';
 import { ChildComponent } from './parentchild/child/child.component';
+import { UsersListComponent } from './pipes/users-list/users-list.component';
+import { TruncateEmailPipe } from './pipes/truncate-email.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ChildComponent } from './parentchild/child/child.component';
     PostsListComponent,
     CounterComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    UsersListComponent,
+    TruncateEmailPipe
   ],
   imports: [
     BrowserModule,

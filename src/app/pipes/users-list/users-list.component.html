@@ -1,0 +1,21 @@
+<div class="users-container">
+    <h1>Users List</h1>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Registration Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.name | uppercase }}</td>
+          <td>{{ user.email | truncateEmail }}</td> <!-- Corrected the pipe name -->
+          <td>{{ user.registrationDate | date:'mediumDate' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
