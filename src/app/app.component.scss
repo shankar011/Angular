@@ -1,0 +1,41 @@
+.app{
+    margin: 1rem;
+}
+nav {
+    background-color: #1a7c80;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  li {
+    display: inline;
+    font-size: 1.5rem;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+   
+    font-weight: 700;
+  }
+  
+  a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+
+  .api h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1a7c80;
+  }

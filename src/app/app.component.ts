@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'alltasks';
+
+  user = {
+    name:'John',
+    age :30,
+    email:"john123@gmail.com"
+  };
+
 }
