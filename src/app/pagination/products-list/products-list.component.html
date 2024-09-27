@@ -1,0 +1,21 @@
+<div class="container mt-4">
+    <h1 class="text-center">Products List</h1>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let product of paginationProducts">
+        <div class="card mb-4">
+          <img [src]="product.image" class="card-img-top" alt="{{ product.title }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.title }}</h5>
+            <p class="card-text">Price: ${{ product.price }}</p>
+            <p class="card-text">Rating: {{ product.rating.rate }} ({{ product.rating.count }} reviews)</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <button class="btn btn-secondary" (click)="previousPage()" [disabled]="currentpage === 1">Previous</button>
+      <button class="btn btn-secondary" (click)="nextPage()" [disabled]="currentpage === (products.length / itemsPerPage)">Next</button>
+    </div>
+  </div>
+  

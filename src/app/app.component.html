@@ -40,5 +40,38 @@
     <p appHighlight="lightgreen">Hover over this paragraph for a green highlight!</p>
     <p appHighlight>Hover over this paragraph to see the default highlight color!</p>
   </div>
+</div>
+
+<div>
+
+  <!-- startserver cmd:- json-server --watch db.json -->
+
+  <app-task-manager></app-task-manager>
+</div>
+
+<div>
+  <app-products-list></app-products-list>
+</div>
+
+<div class="directive">
+  <h1>Lazy Rounting</h1>
+
+  
+  <div class="navbar">
+    <span class="nav-item">
+      <a routerLink="/usersroute" routerLinkActive="active">Users</a>
+    </span>
+    <span class="nav-item">
+      <a routerLink="/ordersroute" routerLinkActive="active">Orders</a>
+    </span>
+  </div>
+  
+
+</div>
+
+<div class="directive">
+
+  <h1>Custom Date Picker</h1>
+  <app-simple-form></app-simple-form>
 
 </div>

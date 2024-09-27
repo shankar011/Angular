@@ -18,6 +18,11 @@ import { ChildComponent } from './parentchild/child/child.component';
 import { UsersListComponent } from './pipes/users-list/users-list.component';
 import { TruncateEmailPipe } from './pipes/truncate-email.pipe';
 import { HighlightDirective } from './customdirective/highlight.directive';
+import { TaskManagerComponent } from './crud/task-manager/task-manager.component';
+import { TaskService } from './task.service';
+import { ProductsListComponent } from './pagination/products-list/products-list.component';
+import { SimpleDatePickerComponent } from './datepicker/shared/simple-date-picker/simple-date-picker.component';
+import { SimpleFormComponent } from './datepicker/forms/simple-form/simple-form.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,11 @@ import { HighlightDirective } from './customdirective/highlight.directive';
     ChildComponent,
     UsersListComponent,
     TruncateEmailPipe,
-    HighlightDirective
+    HighlightDirective,
+    TaskManagerComponent,
+    ProductsListComponent,
+    SimpleDatePickerComponent,
+    SimpleFormComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +51,7 @@ import { HighlightDirective } from './customdirective/highlight.directive';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [TaskService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
