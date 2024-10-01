@@ -1,0 +1,30 @@
+
+.file-upload-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .drop-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  
+  .progress-container {
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    height: 20px;
+    background-color: #4caf50; 
+    width: 0; 
+    transition: width 0.5s; 
+  }
+  
+  .success-message {
+    color: green; 
+    margin-top: 10px;
+  }
+  

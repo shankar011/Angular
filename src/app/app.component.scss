@@ -57,20 +57,20 @@ nav {
 
 
 
-  /* Styling for the navbar */
+  
 .navbar {
   background-color: #f8f9fa;
   padding: 10px;
   text-align: center;
 }
 
-/* Styling for each nav item */
+
 .nav-item {
   margin: 0 15px;
   display: inline-block;
 }
 
-/* Styling for links */
+
 .nav-item a {
   text-decoration: none;
   color: #007bff;
@@ -79,14 +79,12 @@ nav {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hover effect for links */
 .nav-item a:hover {
   background-color: #e2e6ea;
   color: #0056b3;
   border-radius: 5px;
 }
 
-/* Active link styling */
 .active {
   color: #0056b3;
   font-weight: bold;

@@ -23,6 +23,8 @@ import { TaskService } from './task.service';
 import { ProductsListComponent } from './pagination/products-list/products-list.component';
 import { SimpleDatePickerComponent } from './datepicker/shared/simple-date-picker/simple-date-picker.component';
 import { SimpleFormComponent } from './datepicker/forms/simple-form/simple-form.component';
+import { FileuploadComponent } from './fileupload/fileupload.component';
+import {MatProgressBarModule} from'@angular/material/progress-bar'
 
 @NgModule({
   declarations: [
@@ -42,14 +44,16 @@ import { SimpleFormComponent } from './datepicker/forms/simple-form/simple-form.
     TaskManagerComponent,
     ProductsListComponent,
     SimpleDatePickerComponent,
-    SimpleFormComponent
+    SimpleFormComponent,
+    FileuploadComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatProgressBarModule
   ],
   providers: [TaskService],
   bootstrap: [AppComponent]
